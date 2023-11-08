@@ -1,0 +1,17 @@
+digraph G {
+rankdir = "LR";
+graph [splines=ortho];
+subgraph cluster0 {
+label = "struct List list [000000a32c3ffd10]";fontname="Helvetica,Arial,sans-serif";
+node [fontname="Helvetica,Arial,sans-serif" fontsize = "16" ];
+edge [fontname="Helvetica,Arial,sans-serif"];
+subgraph cluster1 {
+rankdir = "TB";
+label = "list variables"list_size [shape=box3d, label="list size = 3"];
+}
+subgraph cluster2 {
+label = "list elements"
+"node0" [ label = "struct List_elem list_elem_ptr [000002467fb813f0] <f1> | { <f0> elem = 0 | <f1> elem_number = 0 | <f2> prev_elem_ptr = [000002467fb814c0] | <f3> elem_ptr = [000002467fb813f0] | <f4> next_elem_ptr = [000002467fb814e0] } " shape = "Mrecord", color="Yellow"];
+"node1" [ label = "struct List_elem list_elem_ptr [000002467fb814e0] <f1> | { <f0> elem = 4 | <f1> elem_number = 1 | <f2> prev_elem_ptr = [000002467fb813f0] | <f3> elem_ptr = [000002467fb814e0] | <f4> next_elem_ptr = [000002467fb814c0] } " shape = "Mrecord", color="Yellow"];
+"node2" [ label = "struct List_elem list_elem_ptr [000002467fb814c0] <f1> | { <f0> elem = 2 | <f1> elem_number = 2 | <f2> prev_elem_ptr = [000002467fb814e0] | <f3> elem_ptr = [000002467fb814c0] | <f4> next_elem_ptr = [000002467fb813f0] } " shape = "Mrecord", color="Yellow"];
+} } }
